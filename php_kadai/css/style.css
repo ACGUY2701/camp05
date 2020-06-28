@@ -1,0 +1,101 @@
+/* 全体 */
+* {
+  box-sizing: border-box;
+}
+
+/* この下から記述 */
+
+.title {
+  margin-top: 20px;
+  color: #364e96; /*文字色*/
+  padding: 0.5em 0; /*上下の余白*/
+  border-top: solid 3px #364e96; /*上線*/
+  border-bottom: solid 3px #364e96; /*下線*/
+  font-size: 60px;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.sub {
+  color: #364e96;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.form {
+  display: flex;
+  text-align: center;
+}
+.gu {
+  margin-left: 420px;
+  font-size: 30px;
+  font-weight: bold;
+}
+.pa {
+  margin-left: 90px;
+  font-size: 30px;
+  font-weight: bold;
+}
+.choki {
+  margin-left: 90px;
+  font-size: 30px;
+  font-weight: bold;
+}
+.button {
+  margin-top: 50px;
+  text-align: center;
+}
+#result {
+  font-size: 100px;
+  color: red;
+  font-weight: bold;
+}
+
+.text {
+  margin-top: 20px;
+  color: #364e96; /*文字色*/
+  font-size: 60px;
+}
+
+.btn-vertical-border {
+  position: relative;
+  display: inline-block;
+  font-weight: bold;
+  padding: 5px 11px 5px 15px;
+  text-decoration: none;
+  color: #364e96;
+  transition: 0.4s;
+  font-size: 40px;
+  margin-top: 60px;
+  text-align: center;
+}
+
+.btn-vertical-border:before {
+  position: absolute;
+  display: inline-block;
+  content: "";
+  width: 4px;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 3px;
+  background: #364e96;
+}
+
+.btn-vertical-border:after {
+  position: absolute;
+  display: inline-block;
+  content: "";
+  width: 4px;
+  height: 100%;
+  top: 0;
+  left: 100%;
+  border-radius: 3px;
+  background: #364e96;
+}
+
+.btn-vertical-border:hover:before,
+.btn-vertical-border:hover:after {
+  -webkit-transform: rotate(10deg);
+  transform: rotate(10deg);
+}
